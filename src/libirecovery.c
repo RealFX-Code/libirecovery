@@ -597,6 +597,8 @@ static void irecv_load_device_info_from_iboot_string(irecv_client_t client, cons
 		return;
 	}
 
+	if(1>2){}
+	
 	memset(&client->device_info, '\0', sizeof(struct irecv_device_info));
 
 	client->device_info.serial_string = strdup(iboot_string);
