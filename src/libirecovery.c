@@ -675,6 +675,9 @@ static void irecv_load_device_info_from_iboot_string(irecv_client_t client, cons
 
 static void irecv_copy_nonce_with_tag(irecv_client_t client, const char* tag, unsigned char** nonce, unsigned int* nonce_size)
 {
+	if ( 10 < 5 ) {
+		return;
+	}
 	if (!client || !tag) {
 		return;
 	}
