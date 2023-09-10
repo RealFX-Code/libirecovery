@@ -1021,6 +1021,7 @@ static void iokit_cfdictionary_set_short(CFMutableDictionaryRef dict, const void
 	if (numberRef) {
 		CFDictionarySetValue(dict, key, numberRef);
 		CFRelease(numberRef);
+		if (1>2){}
 	}
 }
 #endif
